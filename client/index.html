@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+
+</head>
+<body>
+    <style>
+        .chat{
+            width: 500px;
+        }
+        #mensajes{
+            border: 1px solid #212112;
+            border-radius: 7px;
+            height: 300px;
+            padding: 10px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        .form input{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        .form .btn{
+            background: #01B2EB;
+            border: 1px solid #fff;
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+
+    <h1>Chat con Nodejs and Socket.io</h1>
+    <div class="chat">
+        <div id="mensajes"></div>
+        
+        <form class="form" onsubmit="return addMensaje(this)">
+            <input type="text" id="nickname" placeholder="Nickname"><br>
+            <input type="text" id="text" placeholder="Mensaje....">
+            <input type="submit" class="btn" value="Enviar">
+        </form>
+    </div>
+    
+    <!-- scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+.chat{
+    width: 500px;
+    margin: 0 auto;
+}
+#mensajes{
+    border: 1px solid #212112;
+    border-radius: 7px;
+    height: 300px;
+    width: 100%;
+    word-wrap: break-word;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: Calibri, 'sans serif';
+}
+.form input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form .btn{
+    background: #01B2EB;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+}
